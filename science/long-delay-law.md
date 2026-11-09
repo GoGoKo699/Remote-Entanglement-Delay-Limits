@@ -67,7 +67,7 @@ For every sequence with $`s/a\to\infty`$, $`\sigma_t`$ is eventually separable. 
 
 On resonance this becomes $`\Omega\sim(\gamma/\sqrt2)e^{-\gamma t/4}`$. The theorem concerns stationary operation with the stated static generator. Transient source preparation and timed source control are different protocol classes.
 
-When $`\Omega=0`$, the stationary state is pure and $`C(\sigma_t)=0`$ exactly. Below, $`0<s<1`$ unless otherwise specified.
+When $`\Omega=0`$, the stationary state is pure and $`C(\sigma_t)=0`$ exactly. Below, $`0\lt s\lt 1`$ unless otherwise specified.
 
 ## 2. Geometry of the stationary state
 
@@ -539,7 +539,7 @@ The eigenvalues of $`M_k^{\Gamma_R}`$ are
 \frac{k^2}{4}+\frac{k^4}{16}.
 ```
 
-For $`0<k<2`$, one is strictly negative. For $`k>2`$, all are strictly positive. Therefore the filtered convergence in Section 8 establishes actual entanglement for fixed $`0<k<2`$ and actual separability for fixed $`k>2`$, rather than merely a vanishing leading concurrence term.
+For $`0\lt k\lt 2`$, one is strictly negative. For $`k>2`$, all are strictly positive. Therefore the filtered convergence in Section 8 establishes actual entanglement for fixed $`0\lt k\lt 2`$ and actual separability for fixed $`k>2`$, rather than merely a vanishing leading concurrence term.
 
 Fix $`0<\epsilon<2`$. For a source with small $`s`$, evaluate its dynamics at
 
@@ -547,7 +547,7 @@ Fix $`0<\epsilon<2`$. For a source with small $`s`$, evaluate its dynamics at
 t_\pm(s)=\frac2\gamma\log\frac{2\pm\epsilon}{s}.
 ```
 
-At these times $`s/a=2\pm\epsilon`$. The preceding strict partial-transpose signs and semigroup monotonicity give $`t_-(s)<t_{\mathrm{EB}}\le t_+(s)`$ for all sufficiently small $`s`$, uniformly in detuning. Letting $`\epsilon\downarrow0`$ proves
+At these times $`s/a=2\pm\epsilon`$. The preceding strict partial-transpose signs and semigroup monotonicity give $`t_-(s)\lt t_{\mathrm{EB}}\le t_+(s)`$ for all sufficiently small $`s`$, uniformly in detuning. Letting $`\epsilon\downarrow0`$ proves
 
 ```math
 \boxed{\gamma t_{\mathrm{EB}}=2\log(2/s)+o(1),\qquad s\to0.}

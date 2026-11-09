@@ -159,15 +159,7 @@ The map covers the load-bearing ideas and their dependencies. Detailed matrix ca
 **One state dominates every receiver.**
 
 - **Central question:** How does the causal cut become a universal state envelope?
-- **Understanding target:** Combine the extension characterization with M13 to obtain
-
-  ```math
-  \rho_{AB}(t)=(\mathrm{id}\otimes\Lambda_t)(\sigma_\tau),
-  \qquad
-  \sigma_\tau=(\mathcal E_\tau\otimes\mathrm{id})(\Phi_\pi).
-  ```
-
-  Distinguish a state-envelope theorem from a receiver construction, and identify which conclusions already follow from local monotonicity.
+- **Understanding target:** Combine the extension characterization with M13 to obtain $`\rho_{AB}(t)=(\mathrm{id}\otimes\Lambda_t)(\sigma_\tau)`$, where $`\sigma_\tau=(\mathcal E_\tau\otimes\mathrm{id})(\Phi_\pi)`$. Distinguish a state-envelope theorem from a receiver construction, and identify which conclusions already follow from local monotonicity.
 - **Dependencies and story role:** Combines M10–M11 with M13 to complete the receiver-universal upper bound.
 - **Conceptual connection:** Receiver design is reduced to local processing of one delayed channel state, without specifying an absorber, detector or control schedule.
 - **Source pointers:** QN §§5.2 and 12.1 for the physical cut; the purification step is project-supplied. Project: [domination theorem](../science/causal-bound.md#theorem-domination-by-one-delayed-channel-state); [monotone upper bound](../science/causal-bound.md#optimal-entanglement-values).
@@ -287,14 +279,7 @@ The map covers the load-bearing ideas and their dependencies. Detailed matrix ca
 **The finite-ratio limit and its parabola.**
 
 - **Central question:** What remains when stationary source entanglement and propagation decay are made comparable?
-- **Understanding target:** Explain the rescaled positive matrix obtained when $`s/a\to k<\infty`$, including removal of a local tangential phase. Connect continuity of homogeneous concurrence on that finite matrix to
-
-  ```math
-  \frac{C(\sigma_\tau)}{a^2}
-  \longrightarrow\max\{0,k-k^2/2\}.
-  ```
-
-  Distinguish a vanishing leading concurrence from a separate proof of exact separability.
+- **Understanding target:** Explain the rescaled positive matrix obtained when $`s/a\to k<\infty`$, including removal of a local tangential phase. Connect continuity of homogeneous concurrence on that finite matrix to $`\frac{C(\sigma_\tau)}{a^2}\longrightarrow\max\{0,k-k^2/2\}`$. Distinguish a vanishing leading concurrence from a separate proof of exact separability.
 - **Dependencies and story role:** Uses M23–M24 after the exclusion in M25 to identify the surviving asymptotic competition.
 - **Conceptual connection:** The positive linear term and the quadratic penalty express the balance between source resource and loss of usable entanglement during the delay.
 - **Source pointers:** QN §9.2 for the source dynamics. Project: [finite-ratio limit and limiting matrix](../science/long-delay-law.md#8-finite-ratio-limit); [physical mechanism](../science/driven-qubit.md#long-delay-consequence-and-its-mechanism).

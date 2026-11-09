@@ -141,7 +141,7 @@ t_{\mathrm{EB}}
 =\inf\{t\ge0:\mathcal E_t\text{ is entanglement breaking}\}.
 ```
 
-The semigroup property and closedness of the set of entanglement-breaking channels imply that every $`\tau\ge t_{\mathrm{EB}}`$ is forbidden for source–receiver entanglement, including the endpoint. Conversely, if $`\tau<t_{\mathrm{EB}}`$, then $`\sigma_\tau`$ is entangled. Since the finite-dimensional separable set is closed, a sufficiently accurate finite-time receiver approximation is also entangled. Under the ideal collection assumptions, this identifies the receiver-independent horizon exactly with $`t_{\mathrm{EB}}`$.
+The semigroup property and closedness of the set of entanglement-breaking channels imply that every $`\tau\ge t_{\mathrm{EB}}`$ is forbidden for source–receiver entanglement, including the endpoint. Conversely, if $`\tau\lt t_{\mathrm{EB}}`$, then $`\sigma_\tau`$ is entangled. Since the finite-dimensional separable set is closed, a sufficiently accurate finite-time receiver approximation is also entangled. Under the ideal collection assumptions, this identifies the receiver-independent horizon exactly with $`t_{\mathrm{EB}}`$.
 
 For primitive finite-dimensional semigroups with a faithful stationary state, $`t_{\mathrm{EB}}<\infty`$. This eventual-entanglement-breaking property is established by Hanson, Rouzé and Stilck França, Theorem 2.1.[^hanson] Here it is used to identify the operational propagation-delay horizon. In dimension at least three, entanglement before the horizon need not be distillable; the assertion concerns entanglement itself.
 
