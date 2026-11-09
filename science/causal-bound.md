@@ -32,7 +32,7 @@ The canonical stationary purification and delayed state are
 \Phi_\pi=|\sqrt\pi\rangle\!\rangle
 \langle\!\langle\sqrt\pi|,
 \qquad
-\sigma_\tau=(\mathcal E_\tau\otimes\operatorname{id}_R)(\Phi_\pi).
+\sigma_\tau=(\mathcal E_\tau\otimes\mathrm{id}_R)(\Phi_\pi).
 ```
 
 The marginals of $`\Phi_\pi`$ are $`\pi`$ and $`\pi^T`$. Changing the chosen basis changes only the corresponding representation of the reference register.
@@ -43,7 +43,7 @@ For every admissible receiver and every $`t\ge\tau`$, there is a channel $`\Lamb
 
 ```math
 \boxed{\rho_{AB}(t)
-=(\operatorname{id}_A\otimes\Lambda_t)(\sigma_\tau).}
+=(\mathrm{id}_A\otimes\Lambda_t)(\sigma_\tau).}
 ```
 
 Neither the receiver's internal dimension nor the complexity of its controls appears in the bound. The channel $`\Lambda_t`$ is a mathematical description of its output state; the statement does not require that it be known or implemented separately.
@@ -58,7 +58,7 @@ The source's evolution from $`s`$ to $`t`$ uses fresh independent input incremen
 \rho_{AB}(t)
 =(\mathcal E_\tau\otimes\mathcal R_t)
   \bigl(\eta_{AF_{\le s}}(s)\bigr)
-=(\mathcal E_\tau\otimes\operatorname{id}_B)(\omega_{AB}),
+=(\mathcal E_\tau\otimes\mathrm{id}_B)(\omega_{AB}),
 \qquad
 \omega_A=\pi.
 ```
@@ -67,7 +67,7 @@ Every extension of $`\pi`$ is a channel image of a purification of $`\pi`$. To s
 
 ```math
 \omega_{AB}
-=(\operatorname{id}_A\otimes\Lambda_t)(\Phi_\pi).
+=(\mathrm{id}_A\otimes\Lambda_t)(\Phi_\pi).
 ```
 
 Commuting the two local channels yields the asserted formula. The purification step is standard; see Watrous, Theorem 2.12 and the channel dilation results in Chapter 2.[^watrous]
@@ -83,7 +83,7 @@ E\bigl(\rho_{AB}(t)\bigr)\le E(\sigma_\tau).
 For the corresponding equality, assume $`\pi>0`$ and that the source is primitive, in the explicit sense
 
 ```math
-\lim_{t\to\infty}\mathcal E_t(X)=\pi\,\operatorname{Tr}X.
+\lim_{t\to\infty}\mathcal E_t(X)=\pi\,\mathrm{Tr}X.
 ```
 
 Suppose also that all source noise outputs are available coherently with the same delay. The finite-memory continuous receiver in [attainability](attainability.md) has a designated $`d`$-dimensional output register $`C`$ and, for every $`\epsilon>0`$, can satisfy
@@ -120,7 +120,7 @@ When $`\pi>0`$, the delayed state is separable exactly when the source channel i
 Indeed, if $`|\Phi_d\rangle=d^{-1/2}\sum_i|i i\rangle`$ and
 
 ```math
-J_\tau=(\mathcal E_\tau\otimes\operatorname{id})
+J_\tau=(\mathcal E_\tau\otimes\mathrm{id})
 (|\Phi_d\rangle\langle\Phi_d|),
 ```
 

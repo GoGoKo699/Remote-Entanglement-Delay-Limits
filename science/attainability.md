@@ -3,7 +3,7 @@
 The causal bound identifies a single optimal state,
 
 ```math
-\sigma_\tau=(\mathcal E_\tau\otimes\operatorname{id})(\Phi_\pi).
+\sigma_\tau=(\mathcal E_\tau\otimes\mathrm{id})(\Phi_\pi).
 ```
 
 This section supplies two receiver constructions. A general primitive source admits arbitrarily accurate continuous-time attainment with a fixed $`d^2`$-dimensional memory. For a continuously driven amplitude-damped qubit, one matched receiver qubit reaches the optimum in its stationary limit.
@@ -19,7 +19,7 @@ The construction uses the purification and sequential-decoder mechanism underlyi
 Let $`A`$ have dimension $`d`$, with a faithful stationary state $`\pi`$ and
 
 ```math
-\mathcal E_t(X)\longrightarrow\pi\operatorname{Tr}X.
+\mathcal E_t(X)\longrightarrow\pi\mathrm{Tr}X.
 ```
 
 For every $`\epsilon>0`$, there is a continuous Markovian receiver with memory
@@ -42,7 +42,7 @@ For each fixed $`\epsilon`$, the receiver Hamiltonian and its coupling operators
 Introduce an inaccessible mathematical reference $`R`$ purifying the source's initial state. It is not an apparatus supplied to the receiver. With the vectorization convention of [the causal bound](causal-bound.md), define
 
 ```math
-\chi_u=(\mathcal E_u\otimes\operatorname{id}_R)(\Phi_\pi),
+\chi_u=(\mathcal E_u\otimes\mathrm{id}_R)(\Phi_\pi),
 \qquad
 \chi_\infty=\pi\otimes\pi^T.
 ```
@@ -68,7 +68,7 @@ the no-jump term in the quantum-trajectory expansion gives
 \qquad(X>0, s<\infty).
 ```
 
-The same statement holds after tensoring with an identity channel. Therefore $`\chi_u=(\mathcal E_{u-v}\otimes\operatorname{id})(\chi_v)>0`$, as claimed.
+The same statement holds after tensoring with an identity channel. Therefore $`\chi_u=(\mathcal E_{u-v}\otimes\mathrm{id})(\chi_v)>0`$, as claimed.
 
 Fix a regularization time $`\delta>0`$. At receiver processing time $`u`$, use the positive square root
 
@@ -318,7 +318,7 @@ Thus $`J|D\rangle=H_{AB}|D\rangle=0`$.
 Let $`P_D=|D\rangle\langle D|`$ and $`N=1+|\alpha|^2`$. Under the joint master equation,
 
 ```math
-\frac{d}{du}\operatorname{Tr}(P_D\widetilde\rho(u))
+\frac{d}{du}\mathrm{Tr}(P_D\widetilde\rho(u))
 =\frac{2\gamma}{N}
 \langle T|\widetilde\rho(u)|T\rangle\ge0.
 ```
@@ -330,14 +330,14 @@ The dark-state population is a Lyapunov function. To identify its invariant zero
 =2\gamma\langle ee|\widetilde\rho|ee\rangle,
 ```
 
-so the trajectory must also have zero $`ee`$ population and therefore be supported on $`\operatorname{span}\{|gg\rangle,|S\rangle\}`$. The jump vanishes on this subspace. Remaining there under the Hamiltonian requires its support to lie in the kernel of
+so the trajectory must also have zero $`ee`$ population and therefore be supported on $`\mathrm{span}\{|gg\rangle,|S\rangle\}`$. The jump vanishes on this subspace. Remaining there under the Hamiltonian requires its support to lie in the kernel of
 
 ```math
 \frac{\Omega}{\sqrt2}\langle gg|
 -\left(\Delta+\frac{i\gamma}{2}\right)\langle S|.
 ```
 
-That kernel is exactly $`\operatorname{span}\{|D\rangle\}`$ because $`\gamma>0`$. The largest invariant zero-derivative set is therefore the single state $`P_D`$. Compactness of the finite-dimensional state space and invariance of its limit sets give
+That kernel is exactly $`\mathrm{span}\{|D\rangle\}`$ because $`\gamma>0`$. The largest invariant zero-derivative set is therefore the single state $`P_D`$. Compactness of the finite-dimensional state space and invariance of its limit sets give
 
 ```math
 \widetilde\rho(u)\longrightarrow P_D
@@ -382,7 +382,7 @@ For a pure one-way delay, the aligned source–receiver state $`\widetilde\rho(u
 
 ```math
 \rho_{AB}(u+\tau)
-=(\mathcal E_\tau\otimes\operatorname{id}_B)
+=(\mathcal E_\tau\otimes\mathrm{id}_B)
 \bigl(\widetilde\rho(u)\bigr).
 ```
 
@@ -391,7 +391,7 @@ This is the causal cut, with the receiver operating on output emitted through so
 ```math
 \boxed{
 \rho_{AB}^{\rm ss}(\tau)
-=(\mathcal E_\tau\otimes\operatorname{id})(P_D)
+=(\mathcal E_\tau\otimes\mathrm{id})(P_D)
 =(I\otimes U)\sigma_\tau(I\otimes U^\dagger).
 }
 ```

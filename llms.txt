@@ -18,6 +18,14 @@ This repository studies unconditional simultaneous source–receiver entanglemen
 - Which scientific ingredients are inherited? references/RELATED_WORK.md compares the actual source/receiver models and primary results.
 - Which calculations can be rerun? verification/README.md lists commands, tested scope, dependencies and outputs.
 
+## Study route
+
+Use one educational anchor: Crispin Gardiner and Peter Zoller, Quantum Noise, third edition (Springer, 2004). learning/QUANTUM_NOISE_BRIDGE.md identifies the relevant sections, translates conventions, and supplies the steps connecting the textbook to the project's causal theorem and sharp optimization. Research citations in references/RELATED_WORK.md provide attribution and proof dependencies; they are not additional educational anchors.
+
+Follow learning/MILESTONES.md for exactly 30 project-defined understanding targets, ordered in background/preliminaries and narrative/innovation phases. Each target has a central question, dependencies, conceptual connection and source pointers. This common map does not record individual answers or imply that a reader has completed a course.
+
+For a conceptual account, read the bridge and map alongside science/model.md. For theorem-level inspection, go directly from the model to science/causal-bound.md, science/attainability.md and science/long-delay-law.md. For reproduction, use verification/README.md and its documented commands.
+
 ## Qualifiers to retain
 
 For the driven qubit, the scored receiver output is a qubit even if its internal memory is larger. The source drive and detuning are constant during operation but may depend on delay; gamma is fixed. The late-time preparation limit precedes the long-delay limit. The leading law C_*=(1/2+o(1))exp(-gamma*tau) is uniform over all static detunings; resonance is not asserted globally optimal at every finite delay. The source brightness shrinks along an optimal retuning sequence. The theorem does not bound transient source protocols, pulsed source control, feedback, protected source ancillas, normalized heralded branches or a consumable-pair production rate.

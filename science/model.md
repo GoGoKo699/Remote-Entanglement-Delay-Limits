@@ -15,7 +15,7 @@ The source $`A`$ has Hilbert-space dimension $`d`$ and a known, time-independent
 \qquad \mathcal E_t=e^{t\mathcal L}.
 ```
 
-Assume primitivity in the following explicit sense: a unique faithful density matrix $`\pi`$ satisfies $`\mathcal L(\pi)=0`$, and $`\mathcal E_t(X)\to\pi\operatorname{Tr}X`$ as $`t\to\infty`$. The finite-dimensional convergence is uniform on bounded sets. Initialize the source in $`\pi`$, so its unconditional state is stationary at every time.
+Assume primitivity in the following explicit sense: a unique faithful density matrix $`\pi`$ satisfies $`\mathcal L(\pi)=0`$, and $`\mathcal E_t(X)\to\pi\mathrm{Tr}X`$ as $`t\to\infty`$. The finite-dimensional convergence is uniform on bounded sets. Initialize the source in $`\pi`$, so its unconditional state is stationary at every time.
 
 Use a fixed vacuum input-output dilation, or an equivalent fully accessible purified Markov dilation, with independent pure incoming field increments. All output channels that purify the source dynamics propagate toward the receiver with the same deterministic delay $`\tau\ge0`$. A thermal or partially observed environment is covered by the tight statement only if its complete purification is included in the accessible output. A prescribed classical source drive is part of $`H`$; it is not an information channel from the evolving source to the receiver.
 
@@ -32,7 +32,7 @@ Fix a basis on $`A`$ and use a copy $`A'`$. Define the normalized canonical puri
 \qquad
 \Phi_\pi=|\sqrt\pi\rangle\langle\sqrt\pi|,
 \qquad
-\sigma_\tau=(\mathcal E_\tau\otimes\operatorname{id})(\Phi_\pi).
+\sigma_\tau=(\mathcal E_\tau\otimes\mathrm{id})(\Phi_\pi).
 ```
 
 The second marginal of $`\Phi_\pi`$ is $`\pi^T`$ in this convention. A different purification basis changes only a receiver-local unitary.
@@ -40,7 +40,7 @@ The second marginal of $`\Phi_\pi`$ is $`\pi^T`$ in this convention. A different
 **Causal envelope.** For every admissible receiver and every $`t\ge\tau`$, there is a completely positive trace-preserving map $`\Lambda_t:A'\to B`$ such that
 
 ```math
-\rho_{AB}(t)=(\operatorname{id}\otimes\Lambda_t)(\sigma_\tau).
+\rho_{AB}(t)=(\mathrm{id}\otimes\Lambda_t)(\sigma_\tau).
 ```
 
 The map can depend on the protocol and time; the envelope does not. The proof uses the physical time cut, fresh input independence and universality of purification. It is given in [the causal bound](causal-bound.md).
@@ -49,7 +49,7 @@ The map can depend on the protocol and time; the envelope does not. The proof us
 
 ```math
 \mathcal S_\tau(B)
-=\left\{(\operatorname{id}\otimes\Lambda)(\sigma_\tau):
+=\left\{(\mathrm{id}\otimes\Lambda)(\sigma_\tau):
 \Lambda:A'\to B\text{ is CPTP}\right\}.
 ```
 

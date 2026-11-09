@@ -85,7 +85,7 @@ Let $`\mathcal E_\tau=e^{\tau\mathcal L}`$, and define the normalized canonical 
 =\sum_{i,j=0}^1(\sqrt\pi)_{ij}|i\rangle_A|j\rangle_R,
 \qquad
 \sigma_\tau
-=(\mathcal E_\tau\otimes\operatorname{id}_R)
+=(\mathcal E_\tau\otimes\mathrm{id}_R)
 \bigl(|\sqrt\pi\rangle\langle\sqrt\pi|\bigr).
 ```
 
@@ -115,7 +115,7 @@ Let
 
 ```math
 |\Phi^+\rangle=\frac{|00\rangle+|11\rangle}{\sqrt2},\qquad
-J_\tau=(\mathcal E_\tau\otimes\operatorname{id})
+J_\tau=(\mathcal E_\tau\otimes\mathrm{id})
 \bigl(|\Phi^+\rangle\langle\Phi^+|\bigr).
 ```
 
@@ -125,9 +125,9 @@ Then
 \boxed{\mathfrak C_\tau(\Omega,\Delta)=s\,C(J_\tau).}
 ```
 
-This is the pure-input concurrence factorization law [2]. It also follows directly from the local-filter identity proved in [long-delay-law.md](long-delay-law.md): in the eigenbasis of $`\pi`$, apply $`\operatorname{diag}(\sqrt{2q},\sqrt{2p})`$ to the reference half of $`J_\tau`$. Its determinant is $`s`$, and the resulting state is normalized because the reference marginal of $`J_\tau`$ is $`I/2`$.
+This is the pure-input concurrence factorization law [2]. It also follows directly from the local-filter identity proved in [long-delay-law.md](long-delay-law.md): in the eigenbasis of $`\pi`$, apply $`\mathrm{diag}(\sqrt{2q},\sqrt{2p})`$ to the reference half of $`J_\tau`$. Its determinant is $`s`$, and the resulting state is normalized because the reference marginal of $`J_\tau`$ is $`I/2`$.
 
-For an unnormalized positive two-qubit matrix $`W`$, use homogeneous concurrence, $`C(W)=\operatorname{tr}(W)C(W/\operatorname{tr}W)`$. Wootters' formula [1] is
+For an unnormalized positive two-qubit matrix $`W`$, use homogeneous concurrence, $`C(W)=\mathrm{tr}(W)C(W/\mathrm{tr}W)`$. Wootters' formula [1] is
 
 ```math
 \widetilde W=(Y\otimes Y)W^*(Y\otimes Y),\qquad
@@ -165,7 +165,7 @@ The transpose on the second Pauli operator is essential: $`Y^T=-Y`$. This formul
 The symmetric part of $`A`$ gives
 
 ```math
-A+A^T=-\gamma\operatorname{diag}(1,1,2),\qquad
+A+A^T=-\gamma\mathrm{diag}(1,1,2),\qquad
 \|T_\tau\|_2\le a:=e^{-\gamma\tau/2}.
 ```
 

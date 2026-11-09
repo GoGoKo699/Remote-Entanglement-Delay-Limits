@@ -40,7 +40,7 @@ The stationary excited population and radiative photon flux are
 =\frac{\Omega^2}{\gamma^2+4\Delta^2+2\Omega^2}
 =\frac{s}{2},
 \qquad
-\mathcal F=\operatorname{Tr}(L_A^\dagger L_A\pi)
+\mathcal F=\mathrm{Tr}(L_A^\dagger L_A\pi)
 =\frac{\gamma s}{2}.
 ```
 
@@ -126,7 +126,7 @@ An exact discrete construction makes the memory count transparent and supplies a
 Let one source step be an isometry $`V:A\to A\otimes E`$ with a finite-dimensional pure input unit. Its reduced channel $`\mathcal T`$ is primitive, has stationary state $`\pi`$, and all emitted units arrive after $`m`$ steps. Introduce a mathematical reference $`R`$ purifying the initial state and set
 
 ```math
-\chi_n=(\mathcal T^n\otimes\operatorname{id}_R)(\Phi_\pi).
+\chi_n=(\mathcal T^n\otimes\mathrm{id}_R)(\Phi_\pi).
 ```
 
 Use memory $`M=C\otimes R'`$ with dimension $`d^2`$, in a copy basis of $`A\otimes R`$. The intended pure state after processing $`n`$ units is
@@ -147,7 +147,7 @@ Since $`\chi_n\to\pi\otimes\pi^T`$, the target factorizes asymptotically into a 
 
 ```math
 \left\|\rho_{AC}(n+m)
--(\mathcal T^m\otimes\operatorname{id})(\Phi_\pi)\right\|_1
+-(\mathcal T^m\otimes\mathrm{id})(\Phi_\pi)\right\|_1
 \le2\sqrt{\|\chi_n-\pi\otimes\pi^T\|_1}.
 ```
 
