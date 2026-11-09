@@ -276,7 +276,7 @@ J=\sqrt\gamma\,(\sigma_-^A+\sigma_-^B),
 ```math
 H_{AB}=H_A\otimes I+I\otimes H_B
 +\frac{\gamma}{2i}
-\left(\sigma_-^A\sigma_+^B-\sigma_+^A\sigma_-^B\right).
+\left(\sigma_{-}\otimes\sigma_{+}-\sigma_{+}\otimes\sigma_{-}\right).
 ```
 
 Tracing out $`B`$ gives precisely the stated source generator. The cross Hamiltonian is the cascade term and requires no direct control of the source by the receiver.
