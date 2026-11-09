@@ -32,7 +32,7 @@ s=2\sqrt{\det\pi}
 and define the normalized state
 
 ```math
-\sigma_t=(\mathcal E_t\otimes\operatorname{id})
+\sigma_t=(\mathcal E_t\otimes\mathrm{id})
 \bigl(|\sqrt\pi\rangle\langle\sqrt\pi|\bigr),
 \qquad
 |\sqrt\pi\rangle
@@ -67,7 +67,7 @@ For every sequence with $`s/a\to\infty`$, $`\sigma_t`$ is eventually separable. 
 
 On resonance this becomes $`\Omega\sim(\gamma/\sqrt2)e^{-\gamma t/4}`$. The theorem concerns stationary operation with the stated static generator. Transient source preparation and timed source control are different protocol classes.
 
-When $`\Omega=0`$, the stationary state is pure and $`C(\sigma_t)=0`$ exactly. Below, $`0<s<1`$ unless otherwise specified.
+When $`\Omega=0`$, the stationary state is pure and $`C(\sigma_t)=0`$ exactly. Below, $`0\lt s\lt 1`$ unless otherwise specified.
 
 ## 2. Geometry of the stationary state
 
@@ -147,7 +147,7 @@ This exact asymmetry is the structural input that strengthens a generic contract
 Let $`e_2=(0,1)^T`$ in the tangent plane and define
 
 ```math
-S=\operatorname{diag}(\sqrt s,\sqrt s,1),\qquad
+S=\mathrm{diag}(\sqrt s,\sqrt s,1),\qquad
 \beta=\sqrt s\,b,
 ```
 
@@ -156,7 +156,7 @@ A'=SAS^{-1}
 =\begin{pmatrix}B&-\beta e_2\\\beta e_2^T&-d\end{pmatrix},
 \qquad
 B=-\frac\gamma2I+\kappa J
--\frac{\gamma s}{1+s}\operatorname{diag}(0,1),
+-\frac{\gamma s}{1+s}\mathrm{diag}(0,1),
 \qquad
 J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}.
 ```
@@ -313,7 +313,7 @@ z_0=\frac s4\left[T_{ww}-T_{vv}
 -i(T_{wv}+T_{vw})\right].
 ```
 
-These formulas fix all phases and signs. For example, both marginals are $`\operatorname{diag}(q,p)`$, so their off-diagonal entries cancel pairwise.
+These formulas fix all phases and signs. For example, both marginals are $`\mathrm{diag}(q,p)`$, so their off-diagonal entries cancel pairwise.
 
 The operator-norm contraction and Section 4 imply
 
@@ -342,7 +342,7 @@ C(W)=\inf_{W=\sum_j|\psi_j\rangle\langle\psi_j|}
 \sum_j2|\det M_j|.
 ```
 
-It equals the usual normalized concurrence multiplied by $`\operatorname{tr}W`$ [1].
+It equals the usual normalized concurrence multiplied by $`\mathrm{tr}W`$ [1].
 
 **Filtering lemma.** For arbitrary two-by-two matrices $`F,G`$,
 
@@ -386,7 +386,7 @@ so $`a^{1/(1+s)}/s\to0`$. If $`s>\sqrt a`$, then
 \le a^{1/(1+s)-1/2}\longrightarrow0.
 ```
 
-Now use the invertible filter $`F_p=\operatorname{diag}(\sqrt p,1)`$ and define
+Now use the invertible filter $`F_p=\mathrm{diag}(\sqrt p,1)`$ and define
 
 ```math
 N_t=p^{-2}(F_p\otimes F_p)\sigma_t(F_p\otimes F_p).
@@ -448,7 +448,7 @@ uniformly in detuning. A local rotation about the stationary $`u`$ axis on the s
 \frac{z_0}{a^2}\longrightarrow0.
 ```
 
-Use $`F_a=\operatorname{diag}(a,1)`$ and set
+Use $`F_a=\mathrm{diag}(a,1)`$ and set
 
 ```math
 M_t=a^{-4}(F_a\otimes F_a)\sigma_t(F_a\otimes F_a),
@@ -539,7 +539,7 @@ The eigenvalues of $`M_k^{\Gamma_R}`$ are
 \frac{k^2}{4}+\frac{k^4}{16}.
 ```
 
-For $`0<k<2`$, one is strictly negative. For $`k>2`$, all are strictly positive. Therefore the filtered convergence in Section 8 establishes actual entanglement for fixed $`0<k<2`$ and actual separability for fixed $`k>2`$, rather than merely a vanishing leading concurrence term.
+For $`0\lt k\lt 2`$, one is strictly negative. For $`k>2`$, all are strictly positive. Therefore the filtered convergence in Section 8 establishes actual entanglement for fixed $`0\lt k\lt 2`$ and actual separability for fixed $`k>2`$, rather than merely a vanishing leading concurrence term.
 
 Fix $`0<\epsilon<2`$. For a source with small $`s`$, evaluate its dynamics at
 
@@ -547,7 +547,7 @@ Fix $`0<\epsilon<2`$. For a source with small $`s`$, evaluate its dynamics at
 t_\pm(s)=\frac2\gamma\log\frac{2\pm\epsilon}{s}.
 ```
 
-At these times $`s/a=2\pm\epsilon`$. The preceding strict partial-transpose signs and semigroup monotonicity give $`t_-(s)<t_{\mathrm{EB}}\le t_+(s)`$ for all sufficiently small $`s`$, uniformly in detuning. Letting $`\epsilon\downarrow0`$ proves
+At these times $`s/a=2\pm\epsilon`$. The preceding strict partial-transpose signs and semigroup monotonicity give $`t_-(s)\lt t_{\mathrm{EB}}\le t_+(s)`$ for all sufficiently small $`s`$, uniformly in detuning. Letting $`\epsilon\downarrow0`$ proves
 
 ```math
 \boxed{\gamma t_{\mathrm{EB}}=2\log(2/s)+o(1),\qquad s\to0.}
@@ -569,7 +569,7 @@ The proof uses the autonomous generator's stationary-axis structure, not only $`
 Let amplitude damping with excited-state survival probability $`a\in(0,1)`$ be followed by dephasing that multiplies transverse Bloch components by $`\sqrt a`$, and then by conjugation with $`X`$. This CPTP channel has
 
 ```math
-T=\operatorname{diag}(a,-a,-a),\qquad
+T=\mathrm{diag}(a,-a,-a),\qquad
 c=(0,0,-(1-a)),\qquad \|T\|_2=a.
 ```
 
@@ -583,7 +583,7 @@ r_\pi=(0,0,-(1-a)/(1+a)),\qquad
 Its Choi concurrence is $`a`$, as follows directly from the amplitude-damped, dephased X-state Choi matrix. Consequently its stationary-purification concurrence is
 
 ```math
-C\left((\mathcal E\otimes\operatorname{id})
+C\left((\mathcal E\otimes\mathrm{id})
 |\sqrt\pi\rangle\langle\sqrt\pi|\right)
 =\frac{2a^{3/2}}{1+a}.
 ```

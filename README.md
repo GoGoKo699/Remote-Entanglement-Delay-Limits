@@ -9,7 +9,7 @@ The receiver may collect the entire purifying output coherently and use quantum 
 For a stationary primitive finite-dimensional Markov source with channel $`\mathcal E_t`$ and faithful stationary state $`\pi`$, every admissible equal-time source–receiver state is a receiver-local postprocessing of
 
 ```math
-\sigma_\tau=(\mathcal E_\tau\otimes\operatorname{id})
+\sigma_\tau=(\mathcal E_\tau\otimes\mathrm{id})
 \bigl(|\sqrt\pi\rangle\langle\sqrt\pi|\bigr).
 ```
 
@@ -38,7 +38,7 @@ The source parameters may be retuned for each delay. The converse is uniform eve
 \Omega\sim\frac{\gamma}{\sqrt2}e^{-\gamma\tau/4}.
 ```
 
-The mechanism is a tradeoff: a weakly driven source retains entanglement longer, but its stationary state supplies less entanglement to begin with. With $`a=e^{-\gamma\tau/2}`$ and stationary purification concurrence $`s=2\sqrt{\det\pi}`$, the resolved tradeoff is
+The mechanism is a tradeoff: a weakly driven source retains entanglement longer, but its stationary state supplies less entanglement to begin with. With $`a=e^{-\gamma\tau/2}`$ and stationary purification concurrence $`s=2\sqrt{\det\pi}`$, the resolved tradeoff for a finite limiting ratio $`k\ge0`$ is
 
 ```math
 \frac{s}{a}\to k
@@ -69,6 +69,12 @@ Start with the [question, model and exact claims](science/model.md). The [causal
 | Reproducible calculations and their limits | [Verification](verification/README.md) |
 
 The [LLM reading guide](llms.txt) maps questions to their authoritative accounts.
+
+## Learn the project
+
+The selected educational anchor is **Crispin Gardiner and Peter Zoller, _Quantum Noise_, third edition (Springer, 2004)**. The [source bridge](learning/QUANTUM_NOISE_BRIDGE.md) starts from input–output fields, master equations and cascaded systems, translates the conventions used here, and supplies the steps from those foundations to the delay frontier.
+
+The [30-milestone map](learning/MILESTONES.md) follows the scientific story in two phases: the background needed to formulate the stationary causal problem, then the receiver bound, attainability construction and optimized qubit law. It is a common understanding route for any reader; the [science pages](science/model.md) remain the authoritative statements and proofs.
 
 ## Reproduce the calculations
 
