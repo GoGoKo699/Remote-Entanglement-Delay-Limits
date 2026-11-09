@@ -1,0 +1,25 @@
+# Remote Entanglement Delay Limits
+
+This repository studies unconditional simultaneous source–receiver entanglement in stationary operation when all source output takes a deterministic time to reach a downstream receiver. The source is autonomous and has no feedback. The general receiver envelope assumes a primitive finite-dimensional Markov source and ideal access to all purifying outputs for attainment. The sharp qubit law fixes the spontaneous-emission rate and optimizes static drive and detuning only.
+
+## Start here
+
+- README.md: main result and reading route.
+- science/model.md: authoritative task, resource model, scores, limiting order and contribution synopsis.
+
+## Scientific questions
+
+- Why can no receiver exceed one delayed channel state? science/causal-bound.md gives the physical time cut and purification-extension proof.
+- Is the bound attainable by a causal finite-memory device? science/attainability.md gives the continuous-time purification tracker and the attractive matched qubit receiver. General attainment is supremal: the bounded controls may depend on accuracy.
+- What resources and time conventions are being used? science/receiver-resources.md covers memory, full collection, preparation, receiver controls and simultaneous versus retarded states.
+- What is the exact fixed-source qubit optimum at finite delay? science/driven-qubit.md gives the stationary state, Bloch channel, weighted Choi state and concurrence factorization.
+- Why can detuning or receiver complexity not improve the leading large-delay coefficient? science/long-delay-law.md proves uniform estimates, the scaled X-state limit, and the static-source supremum.
+- When does a fixed source become unable to retain remote entanglement? science/causal-bound.md identifies the exact channel horizon; science/long-delay-law.md gives its sharp weak-drive asymptotic for the qubit.
+- Which scientific ingredients are inherited? references/RELATED_WORK.md compares the actual source/receiver models and primary results.
+- Which calculations can be rerun? verification/README.md lists commands, tested scope, dependencies and outputs.
+
+## Qualifiers to retain
+
+For the driven qubit, the scored receiver output is a qubit even if its internal memory is larger. The source drive and detuning are constant during operation but may depend on delay; gamma is fixed. The late-time preparation limit precedes the long-delay limit. The leading law C_*=(1/2+o(1))exp(-gamma*tau) is uniform over all static detunings; resonance is not asserted globally optimal at every finite delay. The source brightness shrinks along an optimal retuning sequence. The theorem does not bound transient source protocols, pulsed source control, feedback, protected source ancillas, normalized heralded branches or a consumable-pair production rate.
+
+Follow the topic-based science pages for complete proof dependencies. The numerical tests support implementation details and examples; they do not establish a uniform asymptotic theorem by sampling.
